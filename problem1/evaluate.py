@@ -325,11 +325,11 @@ def main():
 
     anchors = generate_anchors(FEATURE_MAP_SIZES, ANCHOR_SCALES, image_size=IMAGE_SIZE)
 
-    # 规模专长 + 可视化
+
     stats = analyze_scale_performance(model, loader, anchors, save_dir=str(VIS_DIR))
     print("scale hits:", stats)
 
-    # 逐类 AP
+
     all_dets, all_tgts = [], []
     with torch.no_grad():
         for imgs, tgts in loader:
