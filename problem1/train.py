@@ -10,10 +10,10 @@ from loss import DetectionLoss
 from utils import generate_anchors
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent      # problem1/
-PROJ_DIR = BASE_DIR.parent                      # 项目根
-RESULT_DIR = BASE_DIR / "results"               # problem1/results/
-VIS_DIR = RESULT_DIR / "visualizations"         # problem1/results/visualizations
+BASE_DIR = Path(__file__).resolve().parent
+PROJ_DIR = BASE_DIR.parent
+RESULT_DIR = BASE_DIR / "results"
+VIS_DIR = RESULT_DIR / "visualizations"
 RESULT_DIR.mkdir(parents=True, exist_ok=True)
 VIS_DIR.mkdir(parents=True, exist_ok=True)
 
